@@ -1,0 +1,71 @@
+ 
+<html>
+    <head>
+      <title>Famrecog...</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  
+     <link rel="stylesheet" href="style.css">
+    
+    </head>
+  
+    <body>
+    <div class="container">
+      
+      <center>
+        <h1 class="btn btn-default" style=" width: 100%; font-weight: bolder; font-size: 50;  font-family: 'Luckiest Guy', cursive;">FAMRECOG...</h1>
+  
+        <br><br>
+  
+        <p class="fa" style="font-size: 25px;" style="font-size: 15px; font-weight: bold; font-family: roboto;" class="text-capitalize">THIS MODEL IS TRAINED TO IDENTIFY THE FOLLOWING OBJECTS :</p>
+        <div style="border: white 3px solid; height: 215px;"><b class="fa" style="font-family: 20px;">My Sister<hr>Me<hr>My Father<hr>My Mother</b></div>
+    
+        <br>
+        <br>
+  
+        <label class="fa" style="font-size: 25px;">Webcam View - </label>
+        <div style="display: flex; margin-left: 270px;">
+        <div id="live-camera" style="border-style: dashed;"></div>
+        <div id="photo" style="margin-left: 10px;"></div>
+      </div>
+  
+        
+  
+      <br><br>
+      <div style="display: flex; margin-left: 460px;">
+      <button id="snap" class="fa" style=" width: 100px; height: 50px; background-color: white; color: black; border: blanchedalmond 3px solid;" onclick="snap()">SNAP</button>
+        <button id="identify" class="fa" style=" width: 100px; height: 50px; background-color: white; color: black; border: blanchedalmond 3px solid; margin-left: 15px;" onclick="identify()">IDENTIFY</button>
+      </div>
+        <br><br><br><br>
+        <p class="fa" style="font-size: 25px;">Member :  </p>
+        <span class="fa" id="object"></span>
+        <p class="fa" style="font-size: 25px;">Accuracy :  </p>
+        <span class="fa" id="accuracy"></span>
+      </center>
+  
+    </div>
+    <style>
+      body{
+        background: linear-gradient(rgb(148, 148, 219),rgb(58, 58, 238));
+        color: white;
+        font-weight: bold;
+      }
+      .fa{
+        font-family: 'Righteous', cursive;
+      }
+    </style>
+  <script src="java.js"></script>
+  
+    </body>
+  </html>
+  
+   
